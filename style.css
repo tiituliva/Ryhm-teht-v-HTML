@@ -1,20 +1,39 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: white;
     line-height: 1.6;
+
 }
+.site-title {
+    color: #3c611c;
+    font-famil
+}
+
 .navbar {
-    background-color: #d9e4d3;
+    background-color: #cee1bf;
+}
+
+.col-12 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.custom-btn {
+    background-color: #426B1F;
+    color: white;
+    
 }
 .footer {
-    background-color: #d9e4d3;
-    padding: 20px 0;
+    background-color: #e6f1dd;
+    
     text-align: center;
 }
 .hero {
     background-color: #e8f1e7;
+    padding: 20px 0;
     padding: 50px 0;
-    text-align: center;
+    
 }
 .content {
     padding: 20px 0;
