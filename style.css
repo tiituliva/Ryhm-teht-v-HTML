@@ -2,33 +2,78 @@ body {
     font-family: Arial, sans-serif;
     background-color: white;
     line-height: 1.6;
+}
 
+.btn.custom-btn {
+    /*Painikkeen isonnus*/
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 15px; /* Lisää hieman pyöristetyt kulmat */
+}
+.custom-btn:hover {
+    /* Taustaväri, kun kursori menee painikkeen päälle */
+    background-color: #306024;
 }
 .site-title {
     color: #3c611c;
-    font-famil
+    margin-left: 80px;
 }
 
+
 .navbar {
-    background-color: #cee1bf;
+    background-color: #d7e3ce;
+    text-align: center !important; /* Varmistaa tekstin keskittämisen */
 }
+.navbar-brand {
+    padding-top: 40px;
+    padding-left: 100px;    
+}
+.navbar-nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-evenly; /* Jakaa linkit tasaisesti koko vaakasuunnassa */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav-link {
+    font-size: 24px;
+}
+.nav-link:hover {
+    color: #000901; /* Vaihtaa väriä hover-tilassa */
+    text-decoration: underline; /* Halutessasi lisää alleviivauksen hover-tilassa */
+}
+
+.form-control {
+    height: 50px; /* Kasvattaa hakukentän korkeutta */
+    background-color: #fafffa; /* Asettaa vihreän taustavärin */
+    font-size: 16px; /* Suurentaa tekstin kokoa (valinnainen) */
+    border: 1px solid #306024; /* Lisää vihreän reunuksen (valinnainen) */
+    border-radius: 15px; /* Lisää hieman pyöristetyt kulmat */
+    padding: 10px; /* Lisää tilaa tekstin ympärille */
+}
+   
+
+
+
+
 
 .col-12 {
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 .custom-btn {
     background-color: #426B1F;
     color: white;
+
     
 }
-.footer {
-    background-color: #e6f1dd;
-    
-    text-align: center;
-}
+
 .hero {
     background-color: #e8f1e7;
     padding: 20px 0;
@@ -44,4 +89,27 @@ body {
 }
 .btn {
     font-size: 1rem;
+   
 }
+
+
+/* Footerin yleiset tyylit */
+footer {
+
+    font-size: 20px; /* Fonttikoko */  
+    background-image: url('footerkuva.png'); /* Korvaa tämä polulla kuvaasi */
+    background-size: cover; /* Kuvan kokoaminen niin, että se peittää koko footerin */
+    background-position: center; /* Keskittää kuvan footerin taustalle */
+    background-repeat: no-repeat; /* Estää kuvan toistumisen */
+    padding: 100px 0; /* Lisää tilaa footerin ylä- ja alareunaan */
+    width: 100%; /* Varmistaa, että footer vie koko leveysalueen */
+}
+.footer-column {
+    margin-top: 250px; /* Lisää 20px tyhjää tilaa yläpuolelle */
+    
+}
+/* Footerin sisällön tyylit */
+.custom-footer h5 {
+    margin-bottom: 40px;
+}
+

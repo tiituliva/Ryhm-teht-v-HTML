@@ -19,28 +19,27 @@
                 <h1 class="site-title">Kirjaston nimi</h1>
             </a>            
         </div>
-        <a href="omaTili.html" class="btn custom-btn" aria-label="Avaa Oma tili">Kirjaudu</a>
+        <a href="oma_tili.html" class="btn custom-btn fs-4" aria-label="Avaa Oma tili">Kirjaudu</a>
     </header>
 
-    <section class="navbar navbar-light">
-            <div class="collapse navbar-collapse" id="navbarNav"></div>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html" aria-current="page">Etusivu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aineisto.html">Aineistot</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="oma_tili.html">Oma tili</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
-                    </li>
-                </ul>
-            </div>
-        
-    </section>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav d-flex w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" aria-current="page">Etusivu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aineisto.html">Aineistot</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="oma_tili.html">Oma tili</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="container my-4"></div>
         <div class="row">
@@ -55,18 +54,20 @@
             <div class="col-lg-6 col-md-12 mb-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Oma tili</h5>
-                        <p class="card-text">Hallinnoi lainojasi ja varauksiasi.</p>
-                        <a href="oma_tili.html" class="btn btn-primary" aria-label="Avaa Oma tili">Avaa</a>
+                        <h5 class="card-title">Uutisia</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum fugiat dolorem atque perferendis tenetur accusamus, doloremque tempora alias magni saepe corrupti rem ratione earum, numquam qui vitae dolorum, a autem.</p>
+                        <a href="uutiset.html" class="btn btn-primary" aria-label="Lue lisää">Lue lisää</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 mb-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Aineistot</h5>
-                        <p class="card-text">Selaa ja varaa kirjoja, elokuvia ja muuta aineistoa.</p>
-                        <a href="aineistot.html" class="btn btn-primary" aria-label="Tutustu aineistoihin">Tutustu</a>
+                        <h5 class="card-title">Aukioloajat</h5>
+                        <p class="card-text">MA-PE 07-21</p>
+                        <p class="card-text">LA 10-18</p>
+                        <p class="card-text">SU 10-16</p>
+                        <a href="aineisto.html" class="btn btn-primary" aria-label="Tutustu aineistoihin">Tutustu</a>
                     </div>
                 </div>
             </div>
@@ -88,11 +89,29 @@
         <p>Kirjaston osoite, puhelinnumero ja sähköpostiosoite.</p>
     </div>
 
-    <div class="footer">
+    <footer class="custom-footer text-black text-center py-5">
         <div class="container">
-            <p>Kirjaston nimi &copy; 2025</p>
+            <div class="row g-4">
+                <div class="col-md-4 footer-column">
+                    <h5>TIETOA</h5>
+                    <p>Tietoa meistä</p>
+                    <p>Käyttöehdot</p>
+                    <p>Eväsasetukset</p>
+                </div>
+                <div class="col-md-4 footer-column">
+                    <h5>TARVITSETKO APUA?</h5>
+                    <p>Ohjeita</p>
+                    <p>Ota yhteyttä</p>
+                </div>
+                <div class="col-md-4 footer-column">
+                    <h5>JOTAIN</h5>
+                    <p>Palaute</p>
+                    <p>Kirjaston tietoa</p>
+                    <p>Kirjaston tietoa...</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
