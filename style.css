@@ -83,19 +83,60 @@ body {
 .content {
     padding: 20px 0;
 }
-.card img {
-    max-height: 150px;
-    object-fit: cover;
-}
 .btn {
     font-size: 1rem;
    
 }
 
+.carousel .card {
+    border: none; /* Poistaa korttien reunaviivat */
+}
 
-/* Footerin yleiset tyylit */
+.carousel .card-img-top {
+    height: 300px; /* Rajaa kuvien korkeuden */
+    object-fit: cover; /* Säilyttää kuvan mittasuhteet */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.carousel-control-prev-icon.bg-dark,
+.carousel-control-next-icon.bg-dark {
+    opacity: 0.8; /* Lisää hieman läpinäkyvyyttä nuoliin */
+}
+
+
+/* Responsiivisuus: Lisää gap-arvo mobiilissa */
+@media (max-width: 768px) {
+    .carousel-inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .row {
+        gap: 1rem; /* Lisää tilaa kirjojen väliin */
+    }
+    .col-6 {
+        flex: 1 0 48%; /* Varmistaa, että kuvat eivät mene päällekkäin */
+    }
+}
+/* Mobiilinäkymän karuselli-sisältö */
+@media (max-width: 576px) {
+    .carousel-inner {
+        display: block;
+    }
+    .carousel-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
 footer {
-
     font-size: 20px; /* Fonttikoko */  
     background-image: url('footerkuva.png'); /* Korvaa tämä polulla kuvaasi */
     background-size: cover; /* Kuvan kokoaminen niin, että se peittää koko footerin */
@@ -104,6 +145,7 @@ footer {
     padding: 100px 0; /* Lisää tilaa footerin ylä- ja alareunaan */
     width: 100%; /* Varmistaa, että footer vie koko leveysalueen */
 }
+/* Footerin yleiset tyylit */
 .footer-column {
     margin-top: 250px; /* Lisää 20px tyhjää tilaa yläpuolelle */
     
