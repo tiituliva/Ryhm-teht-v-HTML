@@ -51,19 +51,19 @@
 
     <div class="content container">
         <div class="row">
-            <div class="col-lg-6 col-md-12 mb-4">
+            <div class="col-lg-8 col-md-12 mb-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Uutisia</h5>
+                        <h4 class="card-title">Uutisia</h4>
                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum fugiat dolorem atque perferendis tenetur accusamus, doloremque tempora alias magni saepe corrupti rem ratione earum, numquam qui vitae dolorum, a autem.</p>
                         <a href="uutiset.html" class="btn btn-primary" aria-label="Lue lisää">Lue lisää</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 mb-4">
+            <div class="col-lg-4 col-md-12 mb-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Aukioloajat</h5>
+                        <h4 class="card-title">Aukioloajat</h4>
                         <p class="card-text">MA-PE 07-21</p>
                         <p class="card-text">LA 10-18</p>
                         <p class="card-text">SU 10-16</p>
@@ -77,7 +77,7 @@
     <!-- Kuvakaruselli -->
     <div class="container my-4">
         <div id="bookCarousel" class="carousel slide">
-            <h5 class="text-start mb-4">UUTUUKSIA</h5>
+            <h4 class="text-start mb-4">UUTUUKSIA</h4>
             <div class="carousel-inner">
                 <!-- Ensimmäinen dia -->
                 <div class="carousel-item active">
@@ -168,8 +168,8 @@
 
         <!-- Kuvakaruselli nro 2 -->
         <div class="container my-4">
-            <div id="bookCarousel" class="carousel slide">
-                <h5 class="text-start mb-4">LAINATUIMMAT</h5>
+            <div id="bookCarousel2" class="carousel slide">
+                <h4 class="text-start mb-4">LAINATUIMMAT</h4>
                 <div class="carousel-inner">
                     <!-- Ensimmäinen dia -->
                     <div class="carousel-item active">
@@ -246,11 +246,11 @@
                 </div>
         
                 <!-- Karusellin navigointinuolet -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel2" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
                     <span class="visually-hidden">Edellinen</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel2" data-bs-slide="next">
                     <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
                     <span class="visually-hidden">Seuraava</span>
                 </button>
@@ -259,29 +259,37 @@
     
 
 
-    <footer class="custom-footer text-black text-center py-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4 footer-column">
-                    <h5>TIETOA</h5>
-                    <p>Tietoa meistä</p>
-                    <p>Käyttöehdot</p>
-                    <p>Eväsasetukset</p>
-                </div>
-                <div class="col-md-4 footer-column">
-                    <h5>TARVITSETKO APUA?</h5>
-                    <p>Ohjeita</p>
-                    <p>Ota yhteyttä</p>
-                </div>
-                <div class="col-md-4 footer-column">
-                    <h5>JOTAIN</h5>
-                    <p>Palaute</p>
-                    <p>Kirjaston tietoa</p>
-                    <p>Kirjaston tietoa...</p>
+        <footer class="custom-footer text-black text-start py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4 footer-column">
+                        <h5 class="fw-bold">TIETOA</h5>
+                        <ul>
+                            <li><a class="nav-link" href="ohjeita.html">Tietoa meistä</a></li>
+                            <li><a class="nav-link" href="ohjeita.html">Käyttöehdot</a></li>
+                            <li><a class="nav-link" href="ohjeita.html">Eväsasetukset</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer-column">
+                        <h5 class="fw-bold">TARVITSETKO APUA?</h5>
+                        <ul>
+                            <li><a class="nav-link" href="ohjeita.html">Ohjeita</a></li>
+                            <li><a class="nav-link" href="ohjeita.html">Palaute</a></li>
+                            <li><a class="nav-link" href="ohjeita.html">Ota yhteyttä</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer-column">
+                        <h5 class="fw-bold">SIIRRY</h5>
+                        <ul>
+                            <li><a class="nav-link" href="ohjeita.html">Omat sivut</a></li>
+                            <li><a class="nav-link" href="ohjeita.html">Aukioloajat</a></li>
+                            <li><a class="nav-link" href="ohjeita.html">Uutisia</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+        
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

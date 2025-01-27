@@ -1,7 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif !important;
     background-color: white;
     line-height: 1.6;
+}
+h1, h2, h3, h4 {
+    color:#306024 !important;
+    font-weight: bold;
 }
 
 .btn.custom-btn {
@@ -12,15 +16,18 @@ body {
     padding-top: 10px;
     border-radius: 15px; /* Lisää hieman pyöristetyt kulmat */
 }
-.custom-btn:hover {
+.btn {
+    background-color: #426B1F;
+    color: white;
+    border: 1px solid #306024;
+}
+.btn:hover {
     /* Taustaväri, kun kursori menee painikkeen päälle */
     background-color: #306024;
 }
 .site-title {
-    color: #3c611c;
     margin-left: 80px;
 }
-
 
 .navbar {
     background-color: #d7e3ce;
@@ -41,6 +48,7 @@ body {
 }
 .nav-link {
     font-size: 24px;
+    font-weight: 500;
 }
 .nav-link:hover {
     color: #000901; /* Vaihtaa väriä hover-tilassa */
@@ -49,61 +57,44 @@ body {
 
 .form-control {
     height: 50px; /* Kasvattaa hakukentän korkeutta */
-    background-color: #fafffa; /* Asettaa vihreän taustavärin */
+    background-color: #fcfffa; /* Asettaa vihreän taustavärin */
     font-size: 16px; /* Suurentaa tekstin kokoa (valinnainen) */
     border: 1px solid #306024; /* Lisää vihreän reunuksen (valinnainen) */
     border-radius: 15px; /* Lisää hieman pyöristetyt kulmat */
     padding: 10px; /* Lisää tilaa tekstin ympärille */
 }
-   
-
-
-
-
-
 .col-12 {
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 150px;
     padding-right: 150px;
 }
-.custom-btn {
-    background-color: #426B1F;
-    color: white;
-
-    
+.card-body {
+    border: 1px solid #306024;
+    border-radius: 15px;
+    background-color: #fcfffa;
 }
 
-.hero {
-    background-color: #e8f1e7;
-    padding: 20px 0;
-    padding: 50px 0;
-    
-}
+
 .content {
     padding: 20px 0;
 }
 .btn {
     font-size: 1rem;
-   
 }
 
 .carousel .card {
     border: none; /* Poistaa korttien reunaviivat */
 }
-
 .carousel .card-img-top {
     height: 300px; /* Rajaa kuvien korkeuden */
     object-fit: cover; /* Säilyttää kuvan mittasuhteet */
 }
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 30px;
     height: 30px;
 }
-
-
 .carousel-control-prev-icon.bg-dark,
 .carousel-control-next-icon.bg-dark {
     opacity: 0.8; /* Lisää hieman läpinäkyvyyttä nuoliin */
@@ -147,11 +138,10 @@ footer {
 }
 /* Footerin yleiset tyylit */
 .footer-column {
-    margin-top: 250px; /* Lisää 20px tyhjää tilaa yläpuolelle */
-    
+    margin-top: 300px; /* Lisää 20px tyhjää tilaa yläpuolelle */
 }
 /* Footerin sisällön tyylit */
 .custom-footer h5 {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
