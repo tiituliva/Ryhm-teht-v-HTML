@@ -53,16 +53,16 @@ h1, h2, h3, h4 {
 }
 .nav-link:hover {
     color: #000901; /* Vaihtaa väriä hover-tilassa */
-    text-decoration: underline; /* Halutessasi lisää alleviivauksen hover-tilassa */
+    text-decoration: underline; /* Llisää alleviivauksen hover-tilassa */
 }
 
 .form-control {
-    height: 50px; /* Kasvattaa hakukentän korkeutta */
-    background-color: #fcfffa; /* Asettaa vihreän taustavärin */
-    font-size: 16px; /* Suurentaa tekstin kokoa (valinnainen) */
-    border: 1px solid #306024; /* Lisää vihreän reunuksen (valinnainen) */
-    border-radius: 15px; /* Lisää hieman pyöristetyt kulmat */
-    padding: 10px; /* Lisää tilaa tekstin ympärille */
+    height: 50px;
+    background-color: #fcfffa;
+    font-size: 16px;
+    border: 1px solid #306024; /* Lisää vihreän reunuksen */
+    border-radius: 15px;
+    padding: 10px; 
 }
 
 .col-12 {
@@ -114,21 +114,20 @@ h1, h2, h3, h4 {
 }
 
 
-/* Responsiivisuus: Lisää gap-arvo mobiilissa */
-@media (max-width: 768px) {
-    .carousel-inner {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .row {
-        gap: 1rem; /* Lisää tilaa kirjojen väliin */
-    }
-    .col-6 {
-        flex: 1 0 48%; /* Varmistaa, että kuvat eivät mene päällekkäin */
-    }
+footer {
+    font-size: 20px; 
+    background-image: url('footerkuva.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
 }
-/* Mobiilinäkymän karuselli-sisältö */
+.footer-column {
+    margin-top: 400px;
+}
+
+
+/* Mobiilinäkymä*/
 @media (max-width: 576px) {
     .carousel-inner {
         display: block;
@@ -138,29 +137,33 @@ h1, h2, h3, h4 {
         flex-direction: row;
         justify-content: center;
     }
-}
-@media (max-width: 768px) {
-    .carousel .card {
-        margin: 10px;
+    .nav-link {
+        font-size: 16px;
     }
-}
+    
+    .carousel .card-img-top {
+        height: 100px;
+        object-fit: cover;
+    }
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
 
+}
+    @media (max-width: 768px) {
+        /* Rajoittaa kortin leveyttä ja korkeutta mobiilissa*/
+        .carousel .card {
+            max-width: 200px;
+            max-height: 250px; 
+            margin: 10px auto;
+        }
+        .carousel .card img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover; /* Leikkaa kuvan sopivaksi */
+        }
 
-footer {
-    font-size: 20px; /* Fonttikoko */  
-    background-image: url('footerkuva.png'); /* Korvaa tämä polulla kuvaasi */
-    background-size: cover; /* Kuvan kokoaminen niin, että se peittää koko footerin */
-    background-position: center; /* Keskittää kuvan footerin taustalle */
-    background-repeat: no-repeat; /* Estää kuvan toistumisen */
-    padding: 100px 0; /* Lisää tilaa footerin ylä- ja alareunaan */
-    width: 100%; /* Varmistaa, että footer vie koko leveysalueen */
-}
-/* Footerin yleiset tyylit */
-.footer-column {
-    margin-top: 300px; /* Lisää 20px tyhjää tilaa yläpuolelle */
-}
-/* Footerin sisällön tyylit */
-.custom-footer h5 {
-    margin-bottom: 10px;
-}
+    }
+
 
