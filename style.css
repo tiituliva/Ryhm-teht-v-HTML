@@ -14,12 +14,13 @@ h1, h2, h3, h4 {
     padding-left: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
-    border-radius: 15px; /* Lisää hieman pyöristetyt kulmat */
+    
 }
 .btn {
     background-color: #426B1F;
     color: white;
     border: 1px solid #306024;
+    border-radius: 15px; /* Lisää hieman pyöristetyt kulmat */
 }
 .btn:hover {
     /* Taustaväri, kun kursori menee painikkeen päälle */
@@ -63,25 +64,30 @@ h1, h2, h3, h4 {
     border-radius: 15px; /* Lisää hieman pyöristetyt kulmat */
     padding: 10px; /* Lisää tilaa tekstin ympärille */
 }
+
 .col-12 {
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 150px;
     padding-right: 150px;
 }
-.card-body {
+
+.content-box {
     border: 1px solid #306024;
     border-radius: 15px;
     background-color: #fcfffa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
-
+.text {
+    font-size: 24px;
+}
 .content {
     padding: 20px 0;
 }
-.btn {
-    font-size: 1rem;
-}
+
 
 .carousel .card {
     border: none; /* Poistaa korttien reunaviivat */
@@ -90,14 +96,21 @@ h1, h2, h3, h4 {
     height: 300px; /* Rajaa kuvien korkeuden */
     object-fit: cover; /* Säilyttää kuvan mittasuhteet */
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 30px;
+.carousel-control-prev-icon {
+    width: 80px;
     height: 30px;
+    margin-right: 250px;
+}
+.carousel-control-next-icon {
+    width: 80px;
+    height: 30px;
+    margin-left: 250px;
 }
 .carousel-control-prev-icon.bg-dark,
 .carousel-control-next-icon.bg-dark {
     opacity: 0.8; /* Lisää hieman läpinäkyvyyttä nuoliin */
+    width: 80px;
+    height: 30px;
 }
 
 
