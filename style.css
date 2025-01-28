@@ -120,6 +120,7 @@ h1, h2, h3, h4 {
         display: flex;
         flex-wrap: wrap;
     }
+    
     .row {
         gap: 1rem; /* Lisää tilaa kirjojen väliin */
     }
@@ -136,6 +137,11 @@ h1, h2, h3, h4 {
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .carousel .card {
+        margin: 10px;
     }
 }
 
