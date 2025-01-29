@@ -42,14 +42,105 @@
         </div>
     </nav>
 
-    <div class="content container">
-        <h1>Aineistot</h1>
-        <p>Paikka kirjaston aineistoille. Tässä voit listata kirjat, elokuvat ja muut varattavat aineistot.</p>
-        <ul>
-            <li>Kirja 1</li>
-            <li>Elokuva 1</li>
-            <li>Muu aineisto 1</li>
-        </ul>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Hakupalkki ja suodattimet -->
+            <div class="col-md-3">
+                <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Hae...">
+                </div>
+                <div>
+                    <h5>Rajaa hakua</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>GENRET</strong></li>
+                        <li>Fiktio</li>
+                        <li>Tietokirjat</li>
+                        <li>Romantiikka</li>
+                        <li>Jännitys</li>
+                        <li>Muut</li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><strong>KIELI</strong></li>
+                        <li>Suomi</li>
+                        <li>Englanti</li>
+                        <li>Ruotsi</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Aineistolista -->
+            <div class="col-md-9">
+                <div class="mb-3">
+                    <h5>Hakutulokset: 3 osumaa</h5>
+                </div>
+
+                <!-- Aineisto 1 -->
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <div style="height: 100%; background-color: #e9ecef; text-align: center;">
+                                <!-- Kuvalle paikka -->
+                                <p>Kuva</p>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Kuoleman kolari</h5>
+                                <p class="card-text"><strong>Kirjoittaja:</strong> Peter James</p>
+                                <p class="card-text">Lyhyt kuvaus aineistosta, sen sisällöstä ja merkityksestä lukijalle.</p>
+                                <p><strong>Genre:</strong> Jännitys</p>
+                                <button class="btn btn-success">Varaa</button>
+                                <p class="text-muted mt-2"><strong>Tila:</strong> Lainattavissa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aineisto 2 -->
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <div style="height: 100%; background-color: #e9ecef; text-align: center;">
+                                <!-- Kuvalle paikka -->
+                                <p>Kuva</p>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Kuoleman kolari</h5>
+                                <p class="card-text"><strong>Kirjoittaja:</strong> Peter James</p>
+                                <p class="card-text">Lyhyt kuvaus aineistosta, sen sisällöstä ja merkityksestä lukijalle.</p>
+                                <p><strong>Genre:</strong> Jännitys</p>
+                                <button class="btn btn-success">Varaa</button>
+                                <p class="text-muted mt-2"><strong>Tila:</strong> Lainassa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aineisto 3 -->
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <div style="height: 100%; background-color: #e9ecef; text-align: center;">
+                                <!-- Kuvalle paikka -->
+                                <p>Kuva</p>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Kuoleman kolari</h5>
+                                <p class="card-text"><strong>Kirjoittaja:</strong> Peter James</p>
+                                <p class="card-text">Lyhyt kuvaus aineistosta, sen sisällöstä ja merkityksestä lukijalle.</p>
+                                <p><strong>Genre:</strong> Jännitys</p>
+                                <button class="btn btn-success">Varaa</button>
+                                <p class="text-muted mt-2"><strong>Tila:</strong> Lainattavissa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="custom-footer text-black text-start py-5">
