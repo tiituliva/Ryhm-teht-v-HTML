@@ -25,13 +25,14 @@
     
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid d-flex justify-content-between align-items-center">
-            <!-- Hampurilaisvalikon nappi vasemmalle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+            <!-- Hampurilaisvalikon nappi, joka näkyy vain mobiilissa -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
     
-            <a href="kirjaudu.html" class="btn custom-btn fs-4">Kirjaudu</a>
+            <!-- Kirjaudu-nappi, joka näkyy vain mobiilissa -->
+            <a href="kirjaudu.html" class="btn custom-btn fs-4 d-lg-none">Kirjaudu</a>
     
             <div class="navbar-collapse collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto">
