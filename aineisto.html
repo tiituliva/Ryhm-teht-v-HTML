@@ -20,43 +20,143 @@
                 <h1 class="site-title">Kirjaston nimi</h1>
             </a>            
         </div>
-        <a href="oma_tili.html" class="btn custom-btn fs-4" aria-label="Avaa Oma tili">Kirjaudu</a>
+        <!-- Piilotetaan Kirjaudu-nappi mobiilissa -->
+        <a href="kirjaudu.html" class="btn custom-btn fs-4 d-none d-lg-inline" aria-label="Avaa Oma tili">Kirjaudu</a>
     </header>
-
+    
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbarNavDropdown" style="">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Etusivu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aineisto.html">Aineistot</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="oma_tili.html">Omatili</a>
-              </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kirjastoauto.html">Kirjastoauto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
-                </li>
-            </ul>
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Hampurilaisvalikon nappi vasemmalle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Kirjaudu-nappi oikealle -->
+            <a href="kirjaudu.html" class="btn custom-btn fs-4">Kirjaudu</a>
+    
+            <div class="navbar-collapse collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aineisto.html">Aineistot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oma_tili.html">Oma tili</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kirjastoauto.html">Kirjastoauto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="content container">
-        <h1>Aineistot</h1>
-        <p>Paikka kirjaston aineistoille. Tässä voit listata kirjat, elokuvat ja muut varattavat aineistot.</p>
-        <ul>
-            <li>Kirja 1</li>
-            <li>Elokuva 1</li>
-            <li>Muu aineisto 1</li>
-        </ul>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Hakupalkki ja suodattimet -->
+            <div class="col-md-3">
+                <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Hae...">
+                </div>
+                <div>
+                    <h5>Rajaa hakua</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>GENRET</strong></li>
+                        <li>Fiktio</li>
+                        <li>Tietokirjat</li>
+                        <li>Romantiikka</li>
+                        <li>Jännitys</li>
+                        <li>Muut</li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><strong>KIELI</strong></li>
+                        <li>Suomi</li>
+                        <li>Englanti</li>
+                        <li>Ruotsi</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Aineistolista -->
+            <div class="col-md-9">
+                <div class="mb-3">
+                    <h5>Hakutulokset: 3 osumaa</h5>
+                </div>
+
+                <!-- Aineisto 1 -->
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <div style="height: 100%; text-align: center;">
+                                <!-- Kuvalle paikka -->
+                                <img src="Myrskyn.jpeg" alt="Kirjan kansikuva: Myrskyn Silmä" class="img-fluid h-100">
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Myrskyn Silmä</h5>
+                                <p class="card-text"><strong>Kirjoittaja:</strong> Rebecca Yarros</p>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur sunt corrupti, tempore nobis possimus voluptatum eligendi cupiditate saepe velit iste! Vitae, hic eos tenetur eaque maxime eius mollitia neque quam.</p>
+                                <p><strong>Genre:</strong> Jännitys</p>
+                                <button class="btn btn-success">Varaa</button>
+                                <p class="text-muted mt-2"><strong>Tila:</strong> Lainattavissa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aineisto 2 -->
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <div style="height: 100%; text-align: center;">
+                                <!-- Kuvalle paikka -->
+                                <img src="Kuolemanko.jpeg" alt="Kirjan kansikuva: Kuoleman Koirat" class="img-fluid h-100">
+
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Kuoleman Koirat</h5>
+                                <p class="card-text"><strong>Kirjoittaja:</strong> Peter James</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate perferendis blanditiis sunt id, ducimus, ut corrupti vel eius odit laboriosam voluptatum quaerat voluptate saepe nobis voluptatibus molestias at voluptas?</p>
+                                <p><strong>Genre:</strong> Jännitys</p>
+                                <button class="btn btn-success">Varaa</button>
+                                <p class="text-muted mt-2"><strong>Tila:</strong> Lainassa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aineisto 3 -->
+                <div  class="card mb-3">
+                    <div class="row g-0">
+                        <!-- Kuvan sarake -->
+                        <div class="col-md-2">
+                            <img src="Helvetin.jpeg" alt="Kirjan kansikuva: Elämäni Helvetin Enkelinä" 
+                                 class="img-fluid h-100">
+                        </div>
+                        <!-- Tekstin sarake -->
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Elämäni Helvetin Enkelinä</h5>
+                                <p class="card-text"><strong>Kirjoittaja:</strong> George Christie</p>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, cupiditate mollitia rerum minus quis laboriosam repudiandae rem qui iusto suscipit accusamus. Asperiores, quam? Deleniti modi commodi similique reiciendis fugit voluptates?</p>
+                                <p><strong>Genre:</strong> Jännitys</p>
+                                <button class="btn btn-success">Varaa</button>
+                                <p class="text-muted mt-2"><strong>Tila:</strong> Lainattavissa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="custom-footer text-black text-start py-5">

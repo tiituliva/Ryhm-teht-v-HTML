@@ -19,34 +19,43 @@
                 <h1 class="site-title">Kirjaston nimi</h1>
             </a>            
         </div>
-        <a href="oma_tili.html" class="btn custom-btn fs-4" aria-label="Avaa Oma tili">Kirjaudu</a>
+        <!-- Piilotetaan Kirjaudu-nappi mobiilissa -->
+        <a href="kirjaudu.html" class="btn custom-btn fs-4 d-none d-lg-inline" aria-label="Avaa Oma tili">Kirjaudu</a>
     </header>
-
+    
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbarNavDropdown" style="">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Etusivu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aineisto.html">Aineistot</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="oma_tili.html">Omatili</a>
-              </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kirjastoauto.html">Kirjastoauto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
-                </li>
-            </ul>
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Hampurilaisvalikon nappi vasemmalle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Kirjaudu-nappi oikealle -->
+            <a href="kirjaudu.html" class="btn custom-btn fs-4">Kirjaudu</a>
+    
+            <div class="navbar-collapse collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aineisto.html">Aineistot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oma_tili.html">Oma tili</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kirjastoauto.html">Kirjastoauto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+    
     <div class="content container">
         <h1>Oma tili</h1>
         <p>Tervetuloa omalle tilillesi. Täällä voit hallinnoida lainoja, varauksia ja maksujasi.</p>
