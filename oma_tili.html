@@ -19,25 +19,40 @@
                 <h1 class="site-title">Kirjaston nimi</h1>
             </a>            
         </div>
-        <a href="kirjaudu.html" class="btn custom-btn fs-4" aria-label="Avaa Oma tili">Kirjaudu</a>
+        <!-- Piilotetaan Kirjaudu-nappi mobiilissa -->
+        <a href="kirjaudu.html" class="btn custom-btn fs-4 d-none d-lg-inline" aria-label="Avaa Oma tili">Kirjaudu</a>
     </header>
-
-    <nav class="navbar navbar-light">
-        <div class="container-fluid">
-            <ul class="navbar-nav d-flex w-100">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html" aria-current="page">Etusivu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aineisto.html">Aineistot</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="oma_tili.html">Oma tili</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
-                </li>
-            </ul>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Hampurilaisvalikon nappi, joka näkyy vain mobiilissa -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Kirjaudu-nappi, joka näkyy vain mobiilissa -->
+            <a href="kirjaudu.html" class="btn custom-btn fs-4 d-lg-none">Kirjaudu</a>
+    
+            <div class="navbar-collapse collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aineisto.html">Aineistot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oma_tili.html">Oma tili</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kirjastoauto.html">Kirjastoauto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -74,7 +89,7 @@
                     <h5 class="fw-bold">SIIRRY</h5>
                     <ul>
                         <li><a class="nav-link" href="ohjeita.html">Omat sivut</a></li>
-                        <li><a class="nav-link" href="ohjeita.html">Aukioloajat</a></li>
+                        <li><a class="nav-link" href="yhteystiedot.html">Aukioloajat</a></li>
                         <li><a class="nav-link" href="ohjeita.html">Uutisia</a></li>
                     </ul>
                 </div>

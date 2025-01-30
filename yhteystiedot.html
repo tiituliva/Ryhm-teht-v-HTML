@@ -19,36 +19,94 @@
                 <h1 class="site-title">Kirjaston nimi</h1>
             </a>            
         </div>
-        <a href="kirjaudu.html" class="btn custom-btn fs-4" aria-label="Avaa Oma tili">Kirjaudu</a>
+        <!-- Piilotetaan Kirjaudu-nappi mobiilissa -->
+        <a href="kirjaudu.html" class="btn custom-btn fs-4 d-none d-lg-inline" aria-label="Avaa Oma tili">Kirjaudu</a>
     </header>
-
-    <nav class="navbar navbar-light">
-        <div class="container-fluid">
-            <ul class="navbar-nav d-flex w-100">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html" aria-current="page">Etusivu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aineisto.html">Aineistot</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="oma_tili.html">Oma tili</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
-                </li>
-            </ul>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Hampurilaisvalikon nappi, joka näkyy vain mobiilissa -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Kirjaudu-nappi, joka näkyy vain mobiilissa -->
+            <a href="kirjaudu.html" class="btn custom-btn fs-4 d-lg-none">Kirjaudu</a>
+    
+            <div class="navbar-collapse collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Etusivu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aineisto.html">Aineistot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oma_tili.html">Oma tili</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kirjastoauto.html">Kirjastoauto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
+
     <div class="content container">
         <h1>Yhteystiedot</h1>
-        <p>Tässä ovat kirjaston yhteystiedot:</p>
-        <ul>
-            <li>Osoite: Kirjastokatu 1, 00100 Helsinki</li>
-            <li>Puhelin: 012 345 6789</li>
-            <li>Sähköposti: info@kirjasto.fi</li>
-        </ul>
+        <div class="row"></div>
+            <div class="col-lg-12 col-md-12 mb-4">
+                <div class="content-box fs-4 >">
+                    <div>
+                        <p class="text">Osoite: Kirjastokatu 1, 00100 Helsinki</li>
+                        <p class="text">Puhelin: 012 345 6789</li>
+                        <p class="text">Sähköposti: info@kirjasto.fi</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+                <h4 class="title fs-2">Aukioloajat</h4>
+                <div class="content-box">
+                    <p class="text">MA-PE klo 07-21</p>
+                    <p class="text">LA klo 10-18</p>
+                    <p class="text">SU klo 10-16</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-12 mb-4">
+                <h4 class="title fs-2">Poikkeusaukiolot</h4>
+                <div class="content-box">
+                    <dl class="row">
+                        <dt class="col-md-4">Loppiainen</dt>
+                        <dd class="col-md-4">MA 6.1.</dd>
+                        <dd class="col-md-4">Suljettu</dd>
+                            
+                        <dt class="col-md-4">Kiirastorstai</dt>
+                        <dd class="col-md-4">TO 17.4.</dd>
+                        <dd class="col-md-4">9-15</dd>
+                            
+                        <dt class="col-md-4">Pääsiäispäivä</dt>
+                        <dd class="col-md-4">PE 18.4.</dd>
+                        <dd class="col-md-4">Suljettu</dd>
+                            
+                        <dt class="col-md-4">Lankalauantai</dt>
+                        <dd class="col-md-4">MA 6.1.</dd>
+                        <dd class="col-md-4">Suljettu</dd>
+                    </dl>
+                    <p class="text fs-6">Lisäämme poikkeuspäiviä lähempänä ajankohtaa.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="custom-footer text-black text-start py-5">
@@ -74,7 +132,7 @@
                     <h5 class="fw-bold">SIIRRY</h5>
                     <ul>
                         <li><a class="nav-link" href="ohjeita.html">Omat sivut</a></li>
-                        <li><a class="nav-link" href="ohjeita.html">Aukioloajat</a></li>
+                        <li><a class="nav-link" href="yhteystiedot.html">Aukioloajat</a></li>
                         <li><a class="nav-link" href="ohjeita.html">Uutisia</a></li>
                     </ul>
                 </div>
