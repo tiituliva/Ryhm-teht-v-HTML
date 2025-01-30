@@ -33,6 +33,8 @@ h1, h2, h3, h4 {
 .navbar {
     background-color: #d7e3ce;
     text-align: center !important; /* Varmistaa tekstin keskittämisen */
+    margin-bottom: 50px; /* Lisää tilaa MA-PE ja LA välille */
+    
 }
 .navbar-brand {
     padding-top: 40px;
